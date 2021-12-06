@@ -12,7 +12,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
-
+            <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -27,7 +27,7 @@
         <Label Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Liczba 2" FontSize="20"/>
         <TextBox Grid.Column="2" Grid.Row="2"/>
         
-        <Button Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Content="NWD" FontSize="20" Background="ForestGreen"/>
+        <Button Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Content="NWD" FontSize="20"/>
         <TextBlock Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
