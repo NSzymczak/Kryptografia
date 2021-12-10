@@ -7,6 +7,47 @@
         mc:Ignorable="d"
         Title="WindowChinskie" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Grid.Column="2" Content="Podaj ilość x: " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Name="txtBoxGiveX"/>
+        <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Content="Zatwierdź" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="70,10" Name="btnCheck"/>
+        <Label Grid.Column="1" Grid.Row="3" Content="x = " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Column="3" Grid.Row="3" Content="mod" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Column="2" Grid.Row="3" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxX"/>
+        <TextBox Grid.Column="4" Grid.Row="3" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxMod"/>
+        <Label Grid.Column="1" Grid.Row="4" Content="x = " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Column="3" Grid.Row="4" Content="mod" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Column="2" Grid.Row="4" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxX2"/>
+        <TextBox Grid.Column="4" Grid.Row="4" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxMod2"/>
+        <Label Grid.Column="1" Grid.Row="5" Content="x = " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Column="3" Grid.Row="5" Content="mod" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Column="2" Grid.Row="5" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxX3"/>
+        <TextBox Grid.Column="4" Grid.Row="5" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxMod3"/>
+        <Label Grid.Column="1" Grid.Row="6" Content="x = " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Column="3" Grid.Row="6" Content="mod" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Column="2" Grid.Row="6" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxX4"/>
+        <TextBox Grid.Column="4" Grid.Row="6" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Name="txtBoxMod4"/>
+        <Button Grid.Column="5" Grid.Row="6" Content="Gotowe" Name="btnReady"/>
+        <Label Grid.Column="2" Grid.Row="7" Content="x = " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>

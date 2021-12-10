@@ -27,12 +27,14 @@ namespace Kryptografia
 
         private void ButtonNWD_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowNWD nwd = new WindowNWD();
+            nwd.ShowDialog();
         }
 
         private void ButtonChinskie_Click(object sender, RoutedEventArgs e)
         {
-            
+            WindowChinskie windowChinskie = new WindowChinskie();
+            windowChinskie.ShowDialog();
         }
 
         private void ButtonAfiniczny_Click(object sender, RoutedEventArgs e)
