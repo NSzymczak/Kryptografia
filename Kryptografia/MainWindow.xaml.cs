@@ -52,5 +52,11 @@ namespace Kryptografia
         {
 
         }
+
+        private void ButtonCalc_Click(object sender, RoutedEventArgs e)
+        {
+            WindowCalc win = new WindowCalc();
+            win.ShowDialog(); 
+        }
     }
 }

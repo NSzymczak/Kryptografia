@@ -14,6 +14,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -28,5 +29,6 @@
         <Button Grid.Column="1" Grid.Row="3" Content="Szyfr Afiniczny" Margin="5,5" Click="ButtonAfiniczny_Click"/>
         <Button Grid.Column="1" Grid.Row="4" Content="Szyfr Hill'a" Margin="5,5" Click="ButtonHill_Click"/>
         <Button Grid.Column="1" Grid.Row="5" Content="Szyfr RSA" Margin="5,5" Click="ButtonRSA_Click"/>
+        <Button Grid.Column="1" Grid.Row="6" Content="Kalkulator Mod i ModInv" Margin="5,5" Click="ButtonCalc_Click"/>
     </Grid>
 </Window>

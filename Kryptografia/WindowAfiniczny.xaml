@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kryptografia"
         mc:Ignorable="d"
-        Title="WindowAfiniczny" Height="450" Width="800">
+        Title="WindowAfiniczny" Height="800" Width="500" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -25,15 +25,18 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
         </Grid.RowDefinitions>
-        <Label Grid.Row="1" Grid.Column="1" Content="Y=" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
-        <TextBox Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
-        <Label Content="X + " Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-        <TextBox Grid.Row="1" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"/>
-        <ListBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
-        <ListBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
-        <Label Grid.Row="2" Grid.Column="1" Content="Alfabet: " FontSize="20" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="3" Content="Zaszyfrowany alfabet: " Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
-        <Button Content="Szyfruj sobie" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" FontSize="20" Margin="20,10"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="Y=" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBox Grid.Row="0" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Name="txtA"/>
+        <Label Content="X + " Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
+        <TextBox Grid.Row="0" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Name="txtB"/>
+        <ListBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="8" Name="Alfabet" HorizontalContentAlignment="Center" FontSize="15"/>
+       
+        <Label Grid.Row="1" Grid.Column="1" Content="Alfabet: " FontSize="15" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="3" Content="Zaszyfrowany alfabet: " Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+        <Button Content="Szyfruj sobie" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" FontSize="20" Margin="20,10" Click="Button_Click"/>
     </Grid>
 </Window>
