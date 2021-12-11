@@ -45,7 +45,8 @@ namespace Kryptografia
 
         private void ButtonHill_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowHill windowHill = new WindowHill();
+            windowHill.ShowDialog();
         }
 
         private void ButtonRSA_Click(object sender, RoutedEventArgs e)

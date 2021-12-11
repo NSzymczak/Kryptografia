@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kryptografia"
         mc:Ignorable="d"
-        Title="WindowHill" Height="450" Width="900">
+        Title="WindowHill" Height="600" Width="900">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -25,7 +25,26 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-       
+        <Label Content="K = " Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixK1"/>
+        <TextBox Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixK2"/>
+        <TextBox Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixK3"/>
+        <TextBox Grid.Row="2" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixK4"/>
+        <Label Content="X = " Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX1"/>
+        <TextBox Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX2"/>
+        <Label Content="Y = " Grid.Row="7" Grid.Column="0" Grid.RowSpan="2" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="7" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixY1"/>
+        <TextBox Grid.Row="8" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixY2"/>
+        <Label Content="Y = " Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixY3"/>
+        <TextBox Grid.Row="5" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixY4"/>
+        <Label Content="X = " Grid.Row="7" Grid.Column="4" Grid.RowSpan="2" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="7" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX3"/>
+        <TextBox Grid.Row="8" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX4"/>
+        <Label Content="Hill " Grid.Row="1" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="3" FontSize="60" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
