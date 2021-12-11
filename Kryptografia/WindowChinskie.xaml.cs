@@ -33,10 +33,10 @@ namespace Kryptografia
 
         }
         static int wybor;
-        int[] a=new int[wybor+1];
-        int[] m = new int[wybor+1];
-        int[] M = new int[wybor+1];
-        int[] x = new int[wybor+1];
+        int[] a = new int [4];
+        int[] m = new int[4];
+        int[] M = new int[4];
+        int[] x = new int[4];
         int MM, xx;
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
@@ -69,6 +69,7 @@ namespace Kryptografia
                         txtBoxX4.IsEnabled = true; txtBoxMod4.IsEnabled = true;
                         break;
                     }
+                     
             }        
         }
 
@@ -123,26 +124,38 @@ namespace Kryptografia
 
         private void btnReady_Click(object sender, RoutedEventArgs e)
         {
-            MM = 0; xx = 0;
+            MM = 1; xx = 0;
+            Odp.Text = " ";
             zczytajDane();
-            for (int i = 1; i < m.Length; i++)
+            for (int i = 1; i < wybor+1; i++)
             {
-                MM += m[i];
+                MM *= m[i];
             }
-            for (int i = 0; i < M.Length; i++)
+            //wyswietl(m);
+            //Odp.Text = MM+" ";
+            for (int i = 1; i < wybor + 1; i++)
             {
                 M[i] = MM / m[i];
             }
-            for (int i = 0; i < x.Length; i++)
+            //wyswietl(M);
+            for (int i = 1; i < wybor + 1; i++)
             {
                 x[i] = modInverse(M[i], m[i]);
             }
-            for (int i = 0; i<x.Length; i++)
+            //wyswietl(x);
+            for (int i = 1; i < wybor + 1; i++)
             {
                 xx += a[i] * x[i] * M[i];
             }
-            Odp.Text = "" + xx;
+            xx = xx % MM;
+            Odp.Text += "=" + xx;
         }
-
+        private void wyswietl(int[] tab)
+        {
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Odp.Text += tab[i]+" ";
+            }
+        }
     }
 }
