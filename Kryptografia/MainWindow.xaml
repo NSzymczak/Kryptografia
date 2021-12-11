@@ -31,6 +31,6 @@
         <Button Grid.Column="1" Grid.Row="4" Content="Szyfr Hill'a" Margin="5,5" Click="ButtonHill_Click"/>
         <Button Grid.Column="1" Grid.Row="5" Content="Szyfr RSA" Margin="5,5" Click="ButtonRSA_Click"/>
         <Button Grid.Column="1" Grid.Row="6" Content="Kalkulator Mod i ModInv" Margin="5,5" Click="ButtonCalc_Click"/>
-        <Button Grid.Column="1" Grid.Row="6" Content="Potęgi" Margin="5,5" Click="ButtonPow_Click"/>
+        <Button Grid.Column="1" Grid.Row="6" Content="Generator" Margin="5,5" Click="ButtonGen_Click"/>
     </Grid>
 </Window>

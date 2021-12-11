@@ -60,7 +60,7 @@ namespace Kryptografia
         }
 
 
-        private void ButtonPow_Click(object sender, RoutedEventArgs e)
+        private void ButtonGen_Click(object sender, RoutedEventArgs e)
         {
             WindowLog win = new WindowLog();
             win.ShowDialog();
