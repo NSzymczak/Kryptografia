@@ -46,5 +46,6 @@
         <TextBox Grid.Row="7" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX3"/>
         <TextBox Grid.Row="8" Grid.Column="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Name="txtBoxMatrixX4"/>
         <Label Content="Hill " Grid.Row="1" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="3" FontSize="60" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="Magiczny przycisk" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="2" Margin="20 10" Name="btnMagic"/>
     </Grid>
 </Window>
