@@ -39,7 +39,8 @@ namespace Kryptografia
 
         private void ButtonAfiniczny_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowAfiniczny windowAfiniczny=new WindowAfiniczny();
+            windowAfiniczny.ShowDialog();
         }
 
         private void ButtonHill_Click(object sender, RoutedEventArgs e)
